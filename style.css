@@ -81,7 +81,7 @@
     background-color: rgb(209, 209, 209);
   }
   .cottages-navbar{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("./blur.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("./images/blur.png");
     background-size: cover;
     background-position: center;
     height: 25vh;
