@@ -104,8 +104,8 @@ body{
   margin: 10px;
 }
 .cottages-content img{
- height: 350px;
- width: 350px;
+ height: 400px;
+ width: 400px;
 }
 .contact-us{
   text-align: center;
@@ -171,5 +171,9 @@ footer{
     .main-button{
       letter-spacing: normal;
     }
+    .cottages-content img{
+      height: 200px;
+      width: 200px;
+     }
   }
   
