@@ -98,6 +98,7 @@ body{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  text-align: center;
 }
 .cottages-items{
   margin: 10px;
@@ -110,10 +111,10 @@ body{
   text-align: center;
   font-size: 50px;
   color: rgb(111, 111, 111);
-  margin-top: 6vh;
+  margin-top: 3vh;
 }
 .about-us{
-  height: 53vh;
+  height: 55vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,15 +141,14 @@ body{
 }
 footer{
   background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),url("./images/footer-img.jpg");
-  height: 50vh;
+  height: 55vh;
   background-size: cover;
   color: white;
 }
 .footer-container{
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
 }
 .footer-items{
   margin: 20px 0;
