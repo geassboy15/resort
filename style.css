@@ -178,5 +178,15 @@ footer{
     .contact-us{
       font-size: 25px;
     }
+    .about-us{
+      height: 63vh;
+    }
+    footer{
+      height: 37vh;
+    }
+    .footer-items iframe{
+      width: 200px;
+      height: 200px;
+    }
   }
   
