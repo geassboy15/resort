@@ -1,108 +1,175 @@
 *{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-  }
-  body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif
-  }
-  .nav-bar{
-    background-color: rgba(23, 84, 158, 0.7);
-    width: 100%;
-    height: 50px;
-    display: inline-flex;
-    justify-content: space-around;
-  }
-  .nav-link{
-    padding: 12.5px 0;
-  }
-  .nav-link a{
-    font-size: 1.1rem;
-    color: white;
-  }
-  .nav-link a:hover{
-    color: black;
-    transition: 400ms;
-  }
-  .main{
-    color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(./images/home-image.jpg);
-    background-size: cover;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .main-content{
-    text-align: center;
-    font-size: 60px;
-    letter-spacing: 10px;
-  }
-  .main-button{
-    color: white;
-    border: 3px solid rgb(10, 126, 111);
-    border-radius: 10px;
-    background-color: rgb(10, 126, 111);
-    text-transform: uppercase;
-    font-size: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    letter-spacing: 4px;
-    padding: 10px 50px;
-  }
-  .main-button:hover{
-    transition: 300ms;
-    background-color: rgba(0, 0, 0, 0.0);
-    border: 3px solid white;
-  }
-  .intro{
-    min-height: 90vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    font-size: 1.5rem;
-  }
-  .perks{
-    display: flex;
-    flex-direction: column;
-  }
-  .perks img{
-    width: 200px;
-    height: 200px;
-  }
-  .intro-message, .perks > div{
-    margin: 3%;
-  }
-  .cottages{
-    min-height: 100vh;
-    background-color: rgb(209, 209, 209);
-  }
-  .cottages-navbar{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("./images/blur.png");
-    background-size: cover;
-    background-position: center;
-    height: 25vh;
-    width: auto;
-    font-size: 2rem;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.nav-bar{
+  background-color: rgba(23, 84, 158, 0.7);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.nav-link a{
+  padding: 0 20px;
+  font-size: 1.1rem;
+  color: white;
+}
+.nav-link a:hover{
+  color: black;
+  transition: 400ms;
+}
+.main{
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(./images/home-image.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-content{
+  text-align: center;
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+.main-button{
+  color: white;
+  border: 3px solid rgb(38, 163, 147);
+  border-radius: 10px;
+  background-color: rgb(38, 163, 147);
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  letter-spacing: 4px;
+  padding: 10px 50px;
+}
+.main-button:hover{
+  transition: 300ms;
+  background-color: rgba(0, 0, 0, 0.0);
+  border: 3px solid white;
+}
+.intro{
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.perks{
+  display: flex;
+  flex-direction: column;
+}
+.perks img{
+  width: 200px;
+  height: 200px;
+}
+.intro-message, .perks > div{
+  margin: 3%;
+}
+ .cottages{
+  min-height: 120vh;
+  background-color: rgb(180, 180, 180);
+}
+.cottages-navbar{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("./images/blur.png");
+  background-size: cover;
+  background-position: center;
+  height: 25vh;
+  width: auto;
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cottages-content{
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.cottages-items{
+  margin: 10px;
+}
+.cottages-content img{
+ height: 450px;
+ width: 450px;
+}
+.contact-us{
+  text-align: center;
+  font-size: 50px;
+  color: rgb(111, 111, 111);
+  margin-top: 6vh;
+}
+.about-us{
+  height: 53vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  color: rgb(111, 111, 111);
+}
+.about-items{
+  padding: 0 50px;
+  letter-spacing: 2px;
+  font-size: 18px;
+}
+.about-items-title{
+  font-size: 40px;
+}
+.about-items img{
+  height: 50px;
+  width: 50px;
+}
+.about-information{
+  font-size: 1.2rem;
+  color: black;
+  font-weight: 500;
+}
+footer{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),url("./images/footer-img.jpg");
+  height: 50vh;
+  background-size: cover;
+  color: white;
+}
+.footer-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footer-items{
+  margin: 20px 0;
+}
+.footer-items img{
+  width: 70px;
+  height: 70px;
 }
 
 
 
+  /* desktop res and above  */
   @media (min-width: 1068px) {
     .perks{
       flex-direction: row;
     }
-    .nav-bar{
-      justify-content: center;
-    }
-    .nav-link{
-      margin: 0 10vw;
+  }
+  /*  mobile screen-medium res and below */
+  @media (max-width: 376px) {
+    .main-button{
+      letter-spacing: normal;
     }
   }
+  
