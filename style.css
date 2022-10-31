@@ -79,7 +79,10 @@ body{
   min-height: 120vh;
   background-color: rgb(180, 180, 180);
 }
-.cottages-navbar{
+.attractions{
+  min-height: 100vh;
+}
+.cottages-navbar, .attractions-navbar{
   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("./images/blur.png");
   background-size: cover;
   background-position: center;
@@ -93,17 +96,21 @@ body{
   justify-content: center;
   align-items: center;
 }
-.cottages-content{
+.attractions-navbar{
+  height: 15vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url("./images/atulayan.jpg");
+}
+.cottages-content, .attractions-content{
   padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   text-align: center;
 }
-.cottages-items{
+.cottages-items, .attractions-items{
   margin: 10px;
 }
-.cottages-content img{
+.cottages-content img, .attractions-content img{
  height: 400px;
  width: 400px;
 }
@@ -182,7 +189,7 @@ footer{
       height: 70vh;
     }
     footer{
-      height: 35vh;
+      height: 30vh;
     }
     .footer-items iframe{
       width: 200px;
