@@ -239,6 +239,9 @@ footer{
     .contact-email{
       font-size: 17px;
     }
+    .footer{
+      height: 55vh;
+    }
     .footer-items iframe{
       width: 175px;
       height: 130px;
