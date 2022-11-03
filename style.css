@@ -170,6 +170,9 @@ html{
   color: black;
   font-weight: 500;
 }
+.contact-number a{
+  color: rgb(13, 13, 201);
+}
 .contact-number a:hover{
   text-decoration: underline;
 }
