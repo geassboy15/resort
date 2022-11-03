@@ -16,7 +16,6 @@ html{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 .nav-link a{
   padding: 0 20px;
@@ -106,8 +105,30 @@ html{
   padding-top: 50px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   text-align: center;
+}
+.vlogs-content{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-bottom: 40px;
+}
+.vlogs-items {
+  margin: 20px 5px;
+  width: 550px;
+  height: 350px;
+}
+.vlogs-iframe{
+  /* width=8 height=5 ratio multiple by 7 */
+  border-radius: 8px;
+  width: 490px;
+  height: 280px;
+}
+.vlogs-items p{
+  margin: 2px 10px 10px 10px;
 }
 .cottages-items, .attractions-items{
   margin: 10px;
@@ -144,10 +165,13 @@ html{
   height: 50px;
   width: 50px;
 }
-.about-information{
+.about-information, .contact-number a{
   font-size: 1.2rem;
   color: black;
   font-weight: 500;
+}
+.contact-number a:hover{
+  text-decoration: underline;
 }
 footer{
   background-image: linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),url("./images/footer-img.jpg");
@@ -179,6 +203,39 @@ footer{
   right: 30px;
   z-index: 99;
 }
+.pre-loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  transition: opacity 1s, visibility 1s;
+}
+.hidden{
+  opacity: 0;
+  visibility: hidden;
+}
+.pre-loader::after{
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 10px solid rgb(237, 237, 237);
+  border-top-color: rgb(10, 221, 10);
+  border-radius: 50%;
+  animation: loading 1s linear infinite;
+}
+@keyframes loading{
+  0%{
+    transform: rotate(0turn);
+  }
+  100%{
+    transform: rotate(1turn);
+  }
+}
 
 
 
@@ -189,7 +246,7 @@ footer{
     }
   }
   /*  mobile screen-medium res and below */
-  @media (max-width: 376px) {
+  /* @media (max-width: 376px) {
     .main-button{
       letter-spacing: normal;
     }
@@ -210,7 +267,7 @@ footer{
       width: 250px;
       height: 150px;
     }
-  }
+  } */
   @media (min-width: 381px) and (max-width: 768px) {
     .attractions-navbar{
       font-size: 28px;
@@ -237,6 +294,23 @@ footer{
       height: 20px;
       width: 20px;
     }
+    .vlogs-content{
+      margin: 0;
+    }
+    .vlogs-iframe{
+      /* width=8 height=5 ratio multiple by 7 */
+      width: 350px;
+      height: 210px;
+    }
+    .vlogs-items{
+      width: 350px;
+      height: 250px;
+    }
+    .vlogs-items p{
+      font-size: 13px;
+      margin:  0;
+      margin-bottom: 20px;
+    }
     .footer-items iframe{
       width: 220px;
       height: 175px;
@@ -253,6 +327,23 @@ footer{
     .about-items, .about-information{
       letter-spacing: 1.5px;
       font-size: 15px;
+    }
+    .vlogs-content{
+      margin: 0;
+    }
+    .vlogs-iframe{
+      /* width=8 height=5 ratio multiple by 7 */
+      width: 315px;
+      height: 175px;
+    }
+    .vlogs-items{
+      height: 200px;
+      width: 310px;
+    }
+    .vlogs-items p{
+      font-size: 13px;
+      margin:  0;
+      margin-bottom: 20px;
     }
     .footer{
       height: 60vh;
