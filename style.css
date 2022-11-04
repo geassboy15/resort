@@ -238,38 +238,14 @@ footer{
     transform: rotate(1turn);
   }
 }
-
-
-
   /* desktop res and above  */
   @media (min-width: 1068px) {
     .perks{
       flex-direction: row;
     }
   }
-  /*  mobile screen-medium res and below */
-  /* @media (max-width: 376px) {
-    .main-button{
-      letter-spacing: normal;
-    }
-    .cottages-content img{
-      height: 200px;
-      width: 200px;
-    }
-    .contact-us{
-      font-size: 25px;
-    }
-    .about-us{
-      height: 70vh;
-    }
-    footer{
-      height: 35vh;
-    }
-    .footer-items iframe{
-      width: 250px;
-      height: 150px;
-    }
-  } */
+  
+  /* tablet */
   @media (min-width: 381px) and (max-width: 768px) {
     .attractions-navbar{
       font-size: 28px;
@@ -351,14 +327,14 @@ footer{
       margin:  0;
       margin-bottom: 20px;
     }
-    /* .footer{
-      height: 35vh;
-    } */
+    .footer{
+      height: 33vh;
+    }
     .footer-items iframe{
       width: 175px;
       height: 130px;
     }
-    .rt-button{
+    .rt-button a img{
       width: 40px;
       height: 40px;
     }
